@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{ 
+  int n;
+  cout<<"enter the value of n"<<endl;
+  cin>>n;
+  int a[n];
+  int sum1=0;
+  
+  for(int i=0;i<n-1;i++)
+  {
+    cin>>a[i];
+    sum1=sum1+a[i];
+  }
+  int sum2=(n*(n+1)/2);
+  int d=sum2-sum1;
+  cout<<"the missing value is "<<" "<<d<<endl;
+    return 0;
+}
