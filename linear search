@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+ int linearsearch(int n,int a[],int key)
+ {
+   
+     for(int i=0;i<n;i++)
+     {
+       if(a[i]==key)
+       {
+         return i;
+         
+       }
+     
+     }
+     return -1;
+   
+ }
+
+int main() 
+{
+     int n;
+  cout<<"enter the value of n"<<endl;
+  cin>>n;
+  int a[n];
+ 
+  for(int i=0;i<n;i++)
+  {
+    cin>>a[i];
+    
+  }
+   int key;
+  cout<<"enter the value of key "<<endl;
+  cin>>key;
+  int result= linearsearch(n,a,key);
+  if(result!=-1)
+  {
+      cout<<"your key found at index"<<" "<< result<<endl;
+  }
+  else
+  {
+        cout<<"your key found at index"<<" "<<result<<endl;
+      
+  }
+ 
+    return 0;
+}
